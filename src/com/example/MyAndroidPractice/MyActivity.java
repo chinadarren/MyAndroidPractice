@@ -20,7 +20,7 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        //   setContentView(R.layout.text_image_view);
+          // setContentView(R.layout.text_image_view);
     }
 
     private void inintView() {
@@ -29,9 +29,64 @@ public class MyActivity extends Activity {
     }
 
     public void onClick(View v) {
-
-
         switch (v.getId()) {
+            case R.id.btnGridLayout:
+                setContentView(R.layout.gird_layout);
+                break;
+            case R.id.btnGridReturn:
+                setContentView(R.layout.layout_main);
+                break;
+            case R.id.btnLinearLayout:
+                setContentView(R.layout.linear_brief);
+                break;
+            case R.id.btnLayoutRetrun:
+                setContentView(R.layout.linear_brief);
+                break;
+            case R.id.btnTableLayout:
+                setContentView(R.layout.table_brief);
+                break;
+            case R.id.btnTableReturn:
+                setContentView(R.layout.layout_main);
+                break;
+            case R.id.btnRelative:
+                setContentView(R.layout.relative_brief);
+                break;
+            case R.id.btnSignupReturn:
+                setContentView(R.layout.relative_brief);
+                break;
+            case R.id.btnLinearSignup:
+                setContentView(R.layout.linear_layout);
+                break;
+            case R.id.LinearBriefReturn:
+                setContentView(R.layout.layout_main);
+                break;
+
+            case R.id.btnReativeSignup:
+                setContentView(R.layout.relative_layout);
+                break;
+            case R.id.btnReativeBriefReturn:
+                setContentView(R.layout.layout_main);
+                break;
+            case R.id.btnTextIamge:
+                setContentView(R.layout.text_image_view);
+                break;
+            case R.id.btnTextViewRetrun:
+                setContentView(R.layout.main);
+                break;
+            case R.id.btnLayout:
+                setContentView(R.layout.layout_main);
+                break;
+            case R.id.btnLayoutMianReturn:
+                setContentView(R.layout.main);
+                break;
+            case R.id.btnLinearCodeReturn:
+                setContentView(R.layout.linear_brief);
+                break;
+            case R.id.btnLinearCode:
+                setContentView(R.layout.liner_code);
+                break;
+
+
             case R.id.tv:
                 mTextView = (TextView) v;
                 if (t) {
@@ -48,62 +103,15 @@ public class MyActivity extends Activity {
                     mImageView.setImageResource(R.drawable.ic_launcher);
                     t = false;
                 } else {
-
                     mImageView.setImageResource(R.drawable.adc);
                     t = true;
                 }
+                break;
+
+
+
+
         }
 
-
-//    public void onClick(View v) {
-//        switch (v.getId()) {
-//            case R.id.btnGridLayout:
-//                setContentView(R.layout.gird_layout);
-//                break;
-//            case R.id.btnReturn:
-//                setContentView(R.layout.main);
-//                break;
-//            case R.id.btnLinearLayout:
-//                setContentView(R.layout.linear_layout);
-//                break;
-//            case R.id.linearReturn:
-//                setContentView(R.layout.main);
-//                break;
-//            case R.id.btnTableLayout:
-//                setContentView(R.layout.table_layout);
-//                break;
-//            case R.id.tableReturn:
-//                setContentView(R.layout.main);
-//                break;
-//            case R.id.btnRelative:
-//                setContentView(R.layout.reative_layout);
-//                break;
-//            case R.id.reativeReturn:
-//                setContentView(R.layout.main);
-//                break;
-//            case R.id.linearBrief:
-//                setContentView(R.layout.linear_brief);
-//                break;
-//            case R.id.linearBriefreturn:
-//                setContentView(R.layout.linear_layout);
-//                break;
-//            case R.id.btnLinearBriefreturn:
-//                setContentView(R.layout.main);
-//                break;
-//            case R.id.reativeBrief:
-//                setContentView(R.layout.reative_brief);
-//                break;
-//            case R.id.reativeBriefReturn:
-//                setContentView(R.layout.reative_layout);
-//                break;
-//            case R.id.btnRelativeReturn:
-//                setContentView(R.layout.main);
-//                break;
-//            case R.id.tableBriefReturn:
-//                setContentView(R.layout.table_layout);
-//                break;
-//            case R.id.btnTableBriefReturn:
-//                setContentView(R.layout.main);
-//                break;
     }
 }

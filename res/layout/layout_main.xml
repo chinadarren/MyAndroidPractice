@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="Android Practice"
+              android:gravity="center"
+              android:textSize="30dp"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="线性布局"
+            android:tag="linear_layout"
+            android:onClick="onClick"
+            android:id="@+id/btnLinearLayout"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="相对布局"
+            android:tag="relative_layout"
+            android:onClick="onClick"
+            android:id="@+id/btnRelative"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="表格布局"
+            android:tag="table_layout"
+            android:onClick="onClick"
+            android:id="@+id/btnTableLayout"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="网络布局"
+            android:onClick="onClick"
+            android:id="@+id/btnGridLayout"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="框架布局"
+            android:textColor="#fa0000"
+            />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="绝对布局"
+            android:textColor="#fa0000"
+            />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="返回"
+            android:onClick="onClick"
+            android:id="@+id/btnLayoutMianReturn"
+            />
+</LinearLayout>

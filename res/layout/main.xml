@@ -1,55 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--常用控件-->
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:orientation="vertical">-->
-    <!--<TextView android:layout_width="match_parent" android:layout_height="wrap_content"-->
-              <!--android:text="Android Practice"-->
-              <!--android:gravity="center"-->
-              <!--android:textSize="30dp"-->
-            <!--/>-->
-    <!--<Button android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:text="线性布局实现注册窗口"-->
-            <!--android:tag="linear_layout"-->
-            <!--android:onClick="onClick"-->
-            <!--android:id="@+id/btnLinearLayout"-->
-            <!--/>-->
-    <!--<Button android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:text="相对布局实现注册窗口"-->
-            <!--android:tag="relative_layout"-->
-            <!--android:onClick="onClick"-->
-            <!--android:id="@+id/btnRelative"-->
-            <!--/>-->
-    <!--<Button android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:text="表格布局实现注册窗口"-->
-            <!--android:tag="table_layout"-->
-            <!--android:onClick="onClick"-->
-            <!--android:id="@+id/btnTableLayout"-->
-            <!--/>-->
-    <!--<Button android:layout_width="match_parent" android:layout_height="wrap_content"-->
-            <!--android:text="网络布局实现注册窗口"-->
-            <!--android:onClick="onClick"-->
-            <!--android:id="@+id/btnGridLayout"-->
-            <!--/>-->
-<!--</LinearLayout>-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:text="hello_world"
-              android:textSize="30dp"
-              android:id="@+id/tv"
-              android:textColor="#456"
-              android:clickable="true"
-              android:onClick="onClick"
-            />
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-               android:src="@drawable/ic_launcher"
-               android:id="@+id/iv"
-               android:onClick="onClick"
-               android:clickable="true"
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+         android:text="Layout六大布局"
+         android:onClick="onClick"
+         android:id="@+id/btnLayout"
+         />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="TextView 与 ImageView"
+            android:onClick="onClick"
+            android:id="@+id/btnTextIamge"
             />
 </LinearLayout>
+
+
+

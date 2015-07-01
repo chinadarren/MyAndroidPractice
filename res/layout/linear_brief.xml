@@ -25,15 +25,28 @@
         android:text="  android:layout_gravity 设置自身对象在父布局中的看齐方式，可以更新父布局对象gravity属性给出的缺省属性。
         android:layout_weight 将父布局中剩余的尺寸按各兄弟元素的weight值比例进行填充。与“wrap_content”配合使用即可。
     android:layout_margin=10dp 设置自身对象边缘与父布局的边缘之间的空白。"/>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:orientation="horizontal">
 
-<Button android:layout_width="fill_parent" android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:id="@+id/linearBriefreturn"
-        android:text="返回上层"
-        />
-    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
-            android:text="返回首页"
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:id="@+id/btnLinearBriefreturn"
+            android:text="注册页面"
+            android:id="@+id/btnLinearSignup"
             />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="示例页面"
+            android:onClick="onClick"
+            android:id="@+id/btnLinearCode"
+            />
+
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:id="@+id/LinearBriefReturn"
+            android:text="返回上层"
+            />
+
+</LinearLayout>
+
+
 </LinearLayout>
