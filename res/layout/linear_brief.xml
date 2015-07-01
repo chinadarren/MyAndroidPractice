@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="一、linearlayout的属性："
+            android:textSize="20dp"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:textSize="15dp"
+            android:text="  android:background 设置整个布局画面的背景
+            android:orientation=horizontal 子元素的排列队形，是横向排列，还是纵向排列。
+    android:gravity=bottom 子元素在布局中的缺省看齐方式。
+    android:padding 设置子元素与布局边缘之间的空白。
+    linearlayout布局的特点是：各个子元素彼此连接，中间不留空白。"
+        />
+
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+           android:text="二、linearlayout的子元素属性："
+            android:textSize="20dp"
+           />
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:textSize="15dp"
+        android:text="  android:layout_gravity 设置自身对象在父布局中的看齐方式，可以更新父布局对象gravity属性给出的缺省属性。
+        android:layout_weight 将父布局中剩余的尺寸按各兄弟元素的weight值比例进行填充。与“wrap_content”配合使用即可。
+    android:layout_margin=10dp 设置自身对象边缘与父布局的边缘之间的空白。"/>
+
+<Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:id="@+id/linearBriefreturn"
+        android:text="返回上层"
+        />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="返回首页"
+            android:onClick="onClick"
+            android:id="@+id/btnLinearBriefreturn"
+            />
+</LinearLayout>

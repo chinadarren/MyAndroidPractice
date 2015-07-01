@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--设置表格布局，并设置第一列自动拉伸-->
+    <TableLayout
+            android:stretchColumns="1"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            >
+        <!--表格第一行：输入用户名-->
+        <TableRow>
+            <TextView android:text="用户名"/>
+            <EditText android:hint="字符2~10个字符"/>
+        </TableRow>
+        <!--表格第二行：输入密码-->
+        <TableRow>
+            <TextView android:text="密    码"/>
+            <EditText android:layout_weight="1"
+                      android:hint="字符2~10个字符"
+                      android:password="true"
+                    ></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="确认密码"/>
+            <EditText android:layout_weight="1"
+                      android:hint="字符2~10个字符"
+                      android:password="true"
+                    ></EditText>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            >
+        <TableRow>
+            <TextView
+                    android:text="选择性别"
+                    android:paddingTop="3dp"
+                    />
+            <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:id="@+id/rgSex"
+                        android:orientation="horizontal"
+                    >
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:text="男"
+                        />
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:text="女"
+                             android:checked="true"
+                        />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_marginTop="10dp"
+                  android:text="所在地"
+                  android:id="@+id/spinnerText"
+                />
+        <Spinner android:id="@+id/Spinner01"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_columnSpan="4"
+                 android:layout_marginTop="10dp"
+                 android:entries="@array/citys"
+                ></Spinner>
+
+    </TableLayout>
+    <!--线性布局：两个按钮-->
+    <TableLayout android:layout_marginTop="10dp"
+                 android:stretchColumns="0,1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+        <TableRow>
+            <Button android:padding="3dp"
+                    android:text="注册"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/login32x32"
+                    />
+            <Button android:padding="3dp"
+                    android:text="退出"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/exit32x32"
+                    />
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:text="Table 属性简介"/>
+        <Button android:id="@+id/tableReturn"
+                android:text="返回"
+                android:onClick="onClick"
+                android:background="@drawable/btn_bg"
+                />
+
+    </TableLayout>
+</LinearLayout>
