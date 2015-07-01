@@ -73,8 +73,6 @@
                 android:textColor="#816"
                 android:paddingTop="5dp"
                 />
-
     </LinearLayout>
-
 </LinearLayout>
 
