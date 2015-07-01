@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#123"
+        >
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<沧海桑田>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="40dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<漠漠尘寰>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="5dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<茫茫人海>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="5dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<芸芸众生>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="5dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<上戒浮庸>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="5dp"
+                />  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<大学不止>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="5dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<苦海无边>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="5dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="<<学海无涯>>"
+                android:textSize="30dp"
+                android:textColor="#816"
+                android:paddingTop="5dp"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>
+
