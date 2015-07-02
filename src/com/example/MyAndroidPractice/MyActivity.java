@@ -60,7 +60,6 @@ public class MyActivity extends Activity {
             case R.id.LinearBriefReturn:
                 setContentView(R.layout.layout_main);
                 break;
-
             case R.id.btnReativeSignup:
                 setContentView(R.layout.relative_layout);
                 break;
@@ -85,6 +84,20 @@ public class MyActivity extends Activity {
             case R.id.btnLinearCode:
                 setContentView(R.layout.liner_code);
                 break;
+            case R.id.btnTableSginup:
+                setContentView(R.layout.table_layout);
+                break;
+            case R.id.btnRelativeCode:
+                setContentView(R.layout.relative_code);
+                break;
+            case R.id.btnReativeCodeReturn:
+                setContentView(R.layout.relative_brief);
+                break;
+            case R.id.btnTableCode:
+                setContentView(R.layout.table_code);
+                break;
+
+
 
 
             case R.id.tv:

@@ -85,7 +85,10 @@ MATRIX / matrix 用矩阵来绘制，动态缩小放大图片来显示。
             android:id="@+id/btnReativeSignup"
             android:onClick="onClick"
             android:text="注册页面"/>
-
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnRelativeCode"
+            android:onClick="onClick"
+            />
     <Button android:layout_width="fill_parent"
     android:layout_height="wrap_content"
             android:onClick="onClick"
