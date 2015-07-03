@@ -20,7 +20,7 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-          // setContentView(R.layout.text_image_view);
+        // setContentView(R.layout.text_image_view);
     }
 
     private void inintView() {
@@ -33,7 +33,7 @@ public class MyActivity extends Activity {
             case R.id.btnGridLayout:
                 setContentView(R.layout.gird_layout);
                 break;
-            case R.id.btnGridReturn:
+            case R.id.btnGirdReturn:
                 setContentView(R.layout.layout_main);
                 break;
             case R.id.btnLinearLayout:
@@ -96,8 +96,21 @@ public class MyActivity extends Activity {
             case R.id.btnTableCode:
                 setContentView(R.layout.table_code);
                 break;
-
-
+            case R.id.btntableCodeReturn:
+                setContentView(R.layout.table_brief);
+                break;
+            case R.id.btnGirdLSginUp:
+                setContentView(R.layout.gird_layout);
+                break;
+            case R.id.btnGridSginupReturn:
+                setContentView(R.layout.gird_brief);
+                break;
+            case R.id.btnGirdBriefCode:
+                setContentView(R.layout.gird_code);
+                break;
+            case R.id.btnGirdCodeReturn:
+                setContentView(R.layout.gird_brief);
+                break;
 
 
             case R.id.tv:
@@ -120,8 +133,6 @@ public class MyActivity extends Activity {
                     t = true;
                 }
                 break;
-
-
 
 
         }
