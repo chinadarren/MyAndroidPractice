@@ -14,6 +14,12 @@
             android:onClick="onClick"
             android:id="@+id/btnTextIamge"
             />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="R.Java类与Activity类"
+            android:onClick="onClick"
+            android:id="@+id/btnrandactivuity"
+            />
+
 </LinearLayout>
 
 

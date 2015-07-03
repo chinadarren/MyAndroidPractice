@@ -111,6 +111,17 @@ public class MyActivity extends Activity {
             case R.id.btnGirdCodeReturn:
                 setContentView(R.layout.gird_brief);
                 break;
+            case R.id.btnRJavaReturn:
+                setContentView(R.layout.ractivity_layout);
+                break;
+            case R.id.btnRLayout:
+                setContentView(R.layout.rjava_layout);
+                break;
+            case R.id.btnRAReturn:
+                setContentView(R.layout.layout_main);
+                break;
+
+
 
 
             case R.id.tv:
@@ -122,6 +133,7 @@ public class MyActivity extends Activity {
                     mTextView.setTextColor(Color.YELLOW);
                     t = true;
                 }
+
                 break;
             case R.id.iv:
                 mImageView = (ImageView) v;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="R.java类
+          1.Android为项目中的所有res文件夹下的资源（包括动画、图片、音频、字符串、菜单等）都自动设置索引值，资源索引值是一个十六进制的整数。
+          2.Java代码通过R类来引用res文件夹下的资源。
+          3.Rjava位于项目的gen文件夹下，该类中保存了这些资源索引值，Rjava是Android系统自动生成的，并且随着项目中资源的变更实时更新。该文件是只读文件不要试图删除该文件的内容。
+          4.R类用内部类对不同的资源进行分类存放，列如：
+          （1）包括图片在内的可绘制资源存在内部类drawable中；
+          （2）字符串资源存放在内部类string中；
+          （3）布局文件存放在内部类layout中；
+          （4）控件存放在内部类id中；
+          （5）菜单资源存放在内部类menu中；
+          "/>
+
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="返回"
+            android:onClick="onClick"
+            android:id="@+id/btnRJavaReturn"
+            />
+
+</LinearLayout>
