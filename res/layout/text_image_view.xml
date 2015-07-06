@@ -18,9 +18,27 @@
                android:onClick="onClick"
                android:clickable="true"
             />
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="返回"
-            android:id="@+id/btnTextViewRetrun"
-            android:onClick="onClick"
-            />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="TextView属性"
+                android:id="@+id/btnTextView"
+                android:onClick="onClick"
+                />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ImageView属性"
+                android:id="@+id/btnImageView"
+                android:onClick="onClick"
+                />
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="返回"
+                android:id="@+id/btnTextViewRetrun"
+                android:onClick="onClick"
+                />
+
+    </LinearLayout>
+
 </LinearLayout>

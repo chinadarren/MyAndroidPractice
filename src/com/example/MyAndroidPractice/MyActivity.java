@@ -3,9 +3,12 @@ package com.example.MyAndroidPractice;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MyActivity extends Activity {
     /**
@@ -27,6 +30,23 @@ public class MyActivity extends Activity {
         mTextView = (TextView) findViewById(R.id.tv);
         mImageView = (ImageView) findViewById(R.id.iv);
     }
+public boolean onCreateOptionsMenu(Menu menu){
+   getMenuInflater().inflate(R.menu.main,menu);
+return true;
+}
+public boolean onOptionsItemSelected(MenuItem item){
+    switch(item.getItemId()){
+        case R.id.add_item:
+            Toast.makeText(this,"You clicked Add",Toast.LENGTH_SHORT).show();
+            break;
+        case  R.id.remove_item:
+            Toast.makeText(this,"You clicked Remove",Toast.LENGTH_SHORT).show();
+            break;
+        default:
+    }
+    return true;
+}
+
 
     public void onClick(View v) {
         switch (v.getId()) {
@@ -51,9 +71,9 @@ public class MyActivity extends Activity {
             case R.id.btnRelative:
                 setContentView(R.layout.relative_brief);
                 break;
-            case R.id.btnSignupReturn:
-                setContentView(R.layout.relative_brief);
-                break;
+    //        case R.id.btnSignupReturn:
+    //            setContentView(R.layout.relative_brief);
+     //           break;
             case R.id.btnLinearSignup:
                 setContentView(R.layout.linear_layout);
                 break;
@@ -115,14 +135,38 @@ public class MyActivity extends Activity {
                 setContentView(R.layout.ractivity_layout);
                 break;
             case R.id.btnRLayout:
-                setContentView(R.layout.rjava_layout);
+                setContentView(R.layout.rjava_brief);
                 break;
             case R.id.btnRAReturn:
-                setContentView(R.layout.layout_main);
+                setContentView(R.layout.main);
                 break;
-
-
-
+            case R.id.btnTextView:
+                setContentView(R.layout.textview_layout);
+                break;
+            case R.id.btnImageView:
+                setContentView(R.layout.imageview_layout);
+              break;
+            case R.id.btnrandactivuity:
+                setContentView(R.layout.ractivity_layout);
+                break;
+            case R.id.btnALayout:
+                setContentView(R.layout.activity_brief);
+                break;
+            case R.id.btnExit:
+                finish();
+                break;
+            case R.id.btnToastBrief:
+                setContentView(R.layout.toast_brief);
+                break;
+            case R.id.btnMenuBrief:
+                setContentView(R.layout.toast_brief);
+                break;
+            case R.id.btnToastMenu:
+                setContentView(R.layout.toastmenu_layout);
+                break;
+            case R.id.btnToastMenuReturn:
+                setContentView(R.layout.toastmenu_layout);
+                break;
 
             case R.id.tv:
                 mTextView = (TextView) v;
@@ -133,7 +177,6 @@ public class MyActivity extends Activity {
                     mTextView.setTextColor(Color.YELLOW);
                     t = true;
                 }
-
                 break;
             case R.id.iv:
                 mImageView = (ImageView) v;
@@ -145,9 +188,6 @@ public class MyActivity extends Activity {
                     t = true;
                 }
                 break;
-
-
         }
-
     }
 }
