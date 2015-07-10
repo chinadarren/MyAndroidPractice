@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="显式Intent属性介绍"
+        android:onClick="onClick"
+        android:id="@+id/btnxIntent"
+        />
+<Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="隐显Intent属性介绍"
+        android:onClick="onClick"
+        android:id="@+id/btnyIntent"
+        />
+<Button android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="返回"
+        android:onClick="onClick"
+        android:id="@+id/btnIntentReturn"
+        />
+</LinearLayout>

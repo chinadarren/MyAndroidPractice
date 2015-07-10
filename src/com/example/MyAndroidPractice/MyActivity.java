@@ -1,11 +1,14 @@
 package com.example.MyAndroidPractice;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,11 +22,22 @@ public class MyActivity extends Activity {
     TextView mTextView = null;
     static boolean t;
 
+
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
         // setContentView(R.layout.text_image_view);
+        Button button1 = (Button) findViewById(R.id.btnIntent);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              Intent intent = new Intent(MyActivity.this,secondActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void inintView() {
@@ -167,6 +181,17 @@ public boolean onOptionsItemSelected(MenuItem item){
             case R.id.btnToastMenuReturn:
                 setContentView(R.layout.toastmenu_layout);
                 break;
+            case R.id.btnIntent:
+                setContentView(R.layout.intent_layout);
+                break;
+            //case R.id.btnxIntent:
+            //    setContentView(R.layout.xintent_layout);
+            //    break;
+            //case R.id.btnyIntent:
+            //    setContentView(R.layout.yintent_layout);
+            //    break;
+
+
 
             case R.id.tv:
                 mTextView = (TextView) v;
