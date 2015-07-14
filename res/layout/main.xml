@@ -25,7 +25,7 @@
             android:id="@+id/btnToastMenu"
             />
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Intent"
+            android:text="Intent介绍"
             android:onClick="onClick"
             android:id="@+id/btnIntent"
             />
